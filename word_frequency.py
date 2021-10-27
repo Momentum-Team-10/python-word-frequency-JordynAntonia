@@ -7,9 +7,10 @@ STOP_WORDS = [
 
 def print_word_freq(file):
     """Read in `file` and print out the frequency of words in that file."""
+    
     # removes the punctuation from the text
-    with open(file) as text:
-        lines = text.readlines()
+    with open("praise_song_for_the_day.txt") as praise_song_for_the_day:
+        lines = praise_song_for_the_day.readlines()
         print(f"{len(lines)} lines in the file.")
         for line in lines:
             line = line.replace(",","")
@@ -18,7 +19,19 @@ def print_word_freq(file):
             line = line.replace("?","")
             line = line.replace(":","")
             line = line.replace("'","")
-            print(line)
+        print(praise_song_for_the_day.closed)
+            
+            
+
+    #normalize ALL words within each string to lowercase via "geeksforgeeks.org"
+    with open("praise_song_for_the_day.txt") as praise_song_for_the_day:
+    string = ""
+    lower_string = string.lower()
+    text = text.lower()
+    all_letters = "abcdefghijklmnopqrstuvwxyz"
+    text_to_keep =""
+    print(lower_string)
+
 
 
 
