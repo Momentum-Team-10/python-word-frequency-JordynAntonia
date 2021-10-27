@@ -9,7 +9,8 @@ def clean_text(line):
     """Read in `file` and print out the frequency of words in that file."""
     
     # removes the punctuation from the text
-    #calling function to clean text within the file, opening file, removing punctuation and then closing the file. Looking at each line for punctuation errors with open("praise_song_for_the_day.txt") as praise_song_for_the_day:
+    #calling function to clean text within the file, opening file, removing punctuation and then closing the file. Looking at each line for punctuation errors with open("praise_song_for_the_day.txt") as praise_song_for_the_day: "text=string"
+        with open("praise_song_for_the_day.txt") as praise_song_for_the_day:
         lines = praise_song_for_the_day.readlines()
         print(f"{len(lines)} lines in the file.")
         for line in lines:
@@ -44,6 +45,7 @@ def clean_text(text):
 
     #keep a count of how often each word is used
 def print_word_freq(text):
+    with open("praise_song_for_the_day.txt") as praise_song_for_the_day:
 
 if __name__ == "__main__":
     import argparse
